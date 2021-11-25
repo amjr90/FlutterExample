@@ -45,6 +45,11 @@ class _HomeState extends State<Home> {
               style: ElevatedButton.styleFrom(primary: Colors.blue),
               onPressed: () {},
             ),
+            ElevatedButton(
+              child: const Text('Button'),
+              style: ElevatedButton.styleFrom(primary: Colors.yellow),
+              onPressed: () {},
+            ),
           ],
         ),
       ),
