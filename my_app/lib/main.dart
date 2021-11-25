@@ -32,24 +32,20 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          height: 40.0,
-          width: 150.0,
-          color: Colors.red,
-          child: Column(
-            children: [
-              ElevatedButton(
-                child: const Text('Button'),
-                style: ElevatedButton.styleFrom(primary: Colors.red),
-                onPressed: () {},
-              ),
-              ElevatedButton(
-                child: const Text('Button'),
-                style: ElevatedButton.styleFrom(primary: Colors.blue),
-                onPressed: () {},
-              ),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: const Text('Button'),
+              style: ElevatedButton.styleFrom(primary: Colors.red),
+              onPressed: () {},
+            ),
+            ElevatedButton(
+              child: const Text('Button'),
+              style: ElevatedButton.styleFrom(primary: Colors.blue),
+              onPressed: () {},
+            ),
+          ],
         ),
       ),
     );
