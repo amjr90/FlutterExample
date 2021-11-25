@@ -33,9 +33,25 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      body: Center(
+        child: Container(
+          height: 40.0,
+          width: 150.0,
+          color: Colors.red,
+          child: ElevatedButton(
+            child: const Text('Button'),
+            style: ElevatedButton.styleFrom(primary: Colors.red),            
+            
+            onPressed: (){
+    
+             },),
+         
+        ),
+      ),
     );
+      
+    
   }
 }
 
