@@ -13,18 +13,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-   
         primarySwatch: Colors.blue,
       ),
-      home: const Home(), 
-
+      home: const Home(),
     );
   }
 }
 
-
 class Home extends StatefulWidget {
-  const Home({ Key? key }) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
@@ -39,19 +36,22 @@ class _HomeState extends State<Home> {
           height: 40.0,
           width: 150.0,
           color: Colors.red,
-          child: ElevatedButton(
-            child: const Text('Button'),
-            style: ElevatedButton.styleFrom(primary: Colors.red),            
-            
-            onPressed: (){
-    
-             },),
-         
+          child: Column(
+            children: [
+              ElevatedButton(
+                child: const Text('Button'),
+                style: ElevatedButton.styleFrom(primary: Colors.red),
+                onPressed: () {},
+              ),
+              ElevatedButton(
+                child: const Text('Button'),
+                style: ElevatedButton.styleFrom(primary: Colors.blue),
+                onPressed: () {},
+              ),
+            ],
+          ),
         ),
       ),
     );
-      
-    
   }
 }
-
